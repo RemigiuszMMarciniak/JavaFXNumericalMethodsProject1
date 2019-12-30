@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@save.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SaveController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="saveTextViewPath" prefHeight="26.0" prefWidth="407.0" promptText="Enter a name of the file" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Text fx:id="saveText" fill="#ccda0e" strokeType="OUTSIDE" strokeWidth="0.0" text="Your trajectory in a file">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Text>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Button fx:id="saveSaveButton" mnemonicParsing="false" onAction="#saveToFile" text="Save" />
+            <Button fx:id="saveCancelButton" mnemonicParsing="false" onAction="#goBack" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

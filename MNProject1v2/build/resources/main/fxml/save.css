@@ -1,0 +1,4 @@
+.root {
+    -fx-background-image: url('/pictures/backgroundWindowResolution2.png');
+    -fx-background-color: rgba(3, 0, 255, 0.6);
+}
